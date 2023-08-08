@@ -66,7 +66,7 @@ This command takes in the path to the image you wish to analyze. After processin
 Input:
 </p>
 
-<img src="image/robust/R1.jpg" alt="Robust shrimp larvae" style="max-width:30%;">
+<img src="image/robust/R1.jpg" alt="Robust shrimp larvae" style="max-width:5%;">
 
 ```
 python main.py images/image/robust/R1.jpg
