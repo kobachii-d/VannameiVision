@@ -13,7 +13,7 @@ In aquaculture, early detection of susceptible shrimp larvae is of paramount imp
 </p>
 
 <p align="justify">
-    <h4>1. Clone the project</h1>
+    <h4>1. Clone the repository:</h1>
 </p>
 
 ```
@@ -22,7 +22,7 @@ cd VannameiVision
 ```
 
 <p align="justify">
-    <h4>2. Set up virtual environment</h1>
+    <h4>2. Set up a virtual environment (optional but recommended):</h1>
 </p>
 
 ```
@@ -31,12 +31,16 @@ source venv/bin/activate
 ```
 
 <p align="justify">
-    <h4>3. Install required packages</h1>
+    <h4>3. Install the required packages:</h1>
 </p>
 
 ```
 pip install -r requirements.txt
 ```
+
+<p align="justify">
+    <h2>Usage</h1>
+</p>
 
 <p align="justify">
 To predict whether an image contains robust or susceptible shrimp larvae:
