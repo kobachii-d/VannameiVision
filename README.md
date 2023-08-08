@@ -20,8 +20,17 @@ tensorflow-addons==0.21.0
 ```
 
 <p align="justify">
-    <h2>Usage</h1>
+    <h2>How to use VannameiVision</h1>
 </p>
+
+<p align="justify">
+    <h4>1. Clone the project</h1>
+</p>
+
+```
+git clone https://github.com/kobachii-d/VannameiVision.git
+cd VannameiVision
+```
 
 <p align="justify">
 To predict whether an image contains robust or susceptible shrimp larvae:
