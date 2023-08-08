@@ -6,7 +6,7 @@
 Detecting susceptible shrimp larvae is a critical challenge that requires sophisticated techniques and expertise. This project, VannameiVision, presents a novel approach to address this issue. Leveraging the combined power of probabilistic deep learning, transfer learning, and deep metric learning using a triplet loss function, we've introduced a highly optimized model for shrimp larvae detection.
 </p>
 
-<img src="architecture.jpg" alt="Architecture of VannameiVision Model" style="max-width:100%;">
+<img src="architecture.jpg" alt="Architecture of VannameiVision Model" style="max-width:80%;">
 
 <p align="justify">
 Our extensive research and experiments, backed by 5-fold cross-validation, allowed us to draw some significant conclusions:
