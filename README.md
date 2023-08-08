@@ -13,6 +13,11 @@ In aquaculture, early detection of susceptible shrimp larvae is of paramount imp
 </p>
 
 <p align="justify">
-Ensure you have the following files and libraries:
+To predict whether an image contains robust or susceptible shrimp larvae:
 </p>
+
+```
+python main.py [path_to_image]
+```
+
 
