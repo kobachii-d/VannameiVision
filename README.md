@@ -19,7 +19,3 @@ Our extensive research and experiments, backed by 5-fold cross-validation, allow
         <li>The model, after specific tuning, displayed a promising ability to generalize across unseen datasets, achieving over 90% accuracy across varied backgrounds, including different colors and textures.</li>
     </ul>
 </p>
-
-<p align="justify">
-The results are a testament to our methodology's capability in accurately and robustly identifying susceptible shrimp larvae.
-</p>
