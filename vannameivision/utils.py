@@ -1,13 +1,9 @@
 import numpy as np
 
-import os
 import tensorflow as tf
 import tensorflow_addons as tfa
 
 from skimage import io, exposure, transform
-
-MODEL_DIR   =os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'model')
-WEIGHTS_PATH=os.path.join(MODEL_DIR, "DenseNet121-Triplet-ImageNet.h5")
 
 def build():
     inputs=tf.keras.Input(shape=(224, 224, 3))
@@ -32,7 +28,7 @@ def build():
     x=tf.keras.layers.Dense(1, activation="sigmoid", name="binary")(x)
     binary=x
     x=tf.keras.Model(inputs, [latent, binary])
-    x.load_weights(WEIGHTS_PATH)
+    x.load_weights("DenseNet121-Triplet-ImageNet.h5")
     x.trainable=False
     # done!
     return x
