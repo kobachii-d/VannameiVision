@@ -55,6 +55,33 @@ This command takes in the path to the image you wish to analyze. After processin
 </p>
 
 <p align="justify">
+    <h2>Examples</h1>
+</p>
+
+<p align="justify">
+    <h3>Robust shrimp larvae</h1>
+</p>
+
+<p align="justify">
+Input:
+</p>
+
+<img src="image/robust/R1.jpg" alt="Robust shrimp larvae" style="max-width:30%;">
+
+```
+python main.py images/image/robust/R1.jpg
+```
+
+<p align="justify">
+Output:
+</p>
+
+```
+Prediction: Robust
+Confidence: 92.3%
+```
+
+<p align="justify">
     <h2>Citation</h1>
 </p>
 
