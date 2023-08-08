@@ -53,3 +53,17 @@ python main.py [path_to_image]
 <p align="justify">
 This command takes in the path to the image you wish to analyze. After processing, it will display a prediction along with a confidence percentage.
 </p>
+
+<p align="justify">
+    <h2>Citation</h1>
+</p>
+
+TBA
+
+<p align="justify">
+    <h2>Acknowledgements</h1>
+</p>
+
+<p align="justify">
+We sincerely thank the <a href="https://www.biotec.or.th/" target="_blank">National Center for Genetic Engineering and Biotechnology (BIOTEC)</a>, <a href="https://pccp.ac.th/" target="_blank">Princess Chulabhorn Science High School Pathum Thani (PCSHS)</a>, and our families for their support and encouragement.
+</p>
