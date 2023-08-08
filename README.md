@@ -1,9 +1,9 @@
 <p align="justify">
-    <h1>VannameiVision: An Optimized Probabilistic Deep Learning for Susceptible Shrimp Larvae Detection</h1>
+    <h1>VannameiVision</h1>
 </p>
 
 <p align="justify">
-In aquaculture, early detection of susceptible shrimp larvae is of paramount importance to maintain healthy production environments. This GitHub repository introduces "VannameiVision", a novel deep-learning approach specially designed to address the challenge of accurately identifying susceptible shrimp larvae.
+In aquaculture, early detection of susceptible shrimp larvae is of paramount importance to maintain healthy production environments. This GitHub repository introduces VannameiVision, a novel approach that combines probabilistic deep learning with transfer and deep metric learning techniques to address the challenge of accurately identifying susceptible shrimp larvae.
 </p>
 
 <img src="architecture.jpg" alt="Architecture of VannameiVision Model" style="max-width:30%;">
