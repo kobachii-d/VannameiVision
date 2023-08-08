@@ -19,3 +19,18 @@ Our experiments, backed by 5-fold cross-validation, allowed us to draw some sign
         <li>The model, after specific tuning, displayed a promising ability to generalize across unseen datasets, achieving over 90% accuracy across varied backgrounds, including different colors and textures.</li>
     </ul>
 </p>
+
+<p align="justify">
+    <h2>Requirements</h1>
+</p>
+
+<p align="justify">
+Ensure you have the following files and libraries:
+</p>
+
+<p align="justify">
+    <ul>
+        <li>Files: requirements.txt, util.py, and main.py.</li>
+        <li>Python Libraries: You can install them using the requirements.txt file.</li>
+    </ul>
+</p>
