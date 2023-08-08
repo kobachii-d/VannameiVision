@@ -89,7 +89,7 @@ Confidence: 92.3%
 Input:
 </p>
 
-<img src="image/susceptible/S1.jpg" alt="Susceptible shrimp larvae" style="width: 150px;">
+<img src="image/susceptible/S5.jpg" alt="Susceptible shrimp larvae" style="width: 150px;">
 
 ```
 python main.py images/image/susceptible/S1.jpg
