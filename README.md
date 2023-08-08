@@ -66,7 +66,7 @@ This command takes in the path to the image you wish to analyze. After processin
 Input:
 </p>
 
-<img src="image/robust/R1.jpg" alt="Robust shrimp larvae" style="width: 128px;">
+<img src="image/robust/R2.jpg" alt="Robust shrimp larvae" style="width: 150px;">
 
 ```
 python main.py images/image/robust/R1.jpg
@@ -89,7 +89,7 @@ Confidence: 92.3%
 Input:
 </p>
 
-<img src="image/susceptible/S1.jpg" alt="Susceptible shrimp larvae" style="width: 128px;">
+<img src="image/susceptible/S1.jpg" alt="Susceptible shrimp larvae" style="width: 150px;">
 
 ```
 python main.py images/image/susceptible/S1.jpg
