@@ -3,11 +3,11 @@
 </p>
 
 <p align="justify">
-In aquaculture, early detection of susceptible shrimp larvae is of paramount importance to maintain a healthy and thriving production environment. Yet, conventional detection methods often rely heavily on the expertise of human specialists, a time-consuming process prone to errors.
+In aquaculture, early detection of susceptible shrimp larvae is of paramount importance to maintain healthy production environments. Yet, conventional detection methods often rely heavily on human specialists -- a time-consuming process prone to errors.
 </p>
 
 <p align="justify">
-With the rapid advancement in machine learning technologies, there emerges a promising avenue for automating and enhancing the precision of such detections. This GitHub repository introduces "VannameiVision", a novel deep learning approach meticulously designed to address the challenge of accurately identifying susceptible shrimp larvae.
+This GitHub repository introduces "VannameiVision", a novel deep learning approach meticulously designed to address the challenge of accurately identifying susceptible shrimp larvae.
 </p>
 
 <img src="architecture.jpg" alt="Architecture of VannameiVision Model" style="max-width:30%;">
