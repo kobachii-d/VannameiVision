@@ -49,3 +49,7 @@ To predict whether an image contains robust or susceptible shrimp larvae:
 ```
 python main.py [path_to_image]
 ```
+
+<p align="justify">
+This command takes in the path to the image you wish to analyze. After processing, it will display a prediction along with a confidence percentage.
+</p>
