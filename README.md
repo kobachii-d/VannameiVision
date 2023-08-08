@@ -3,5 +3,5 @@
 </p>
 
 <p align="justify">
-Detecting susceptible shrimp larvae is a challenge that necessitates specialized expertise. We propose an optimized approach, leveraging probabilistic deep learning with transfer learning and deep metric learning using a triplet loss function. Our method achieves high accuracy and robustness, particularly with the DenseNet121 model.
+Detecting susceptible shrimp larvae is a critical challenge that requires sophisticated techniques and expertise. This project, VannameiVision, presents a novel approach to address this issue. Leveraging the combined power of probabilistic deep learning, transfer learning, and deep metric learning using a triplet loss function, we've introduced a highly optimized model for shrimp larvae detection.
 </p>
