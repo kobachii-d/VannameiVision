@@ -9,18 +9,7 @@ In aquaculture, early detection of susceptible shrimp larvae is of paramount imp
 <img src="architecture.jpg" alt="Architecture of VannameiVision Model" style="max-width:30%;">
 
 <p align="justify">
-    <h2>Dependencies</h1>
-</p>
-
-```
-numpy==1.22.4
-scikit-image==0.19.3
-tensorflow==2.12.0
-tensorflow-addons==0.21.0
-```
-
-<p align="justify">
-    <h2>How to use VannameiVision</h1>
+    <h2>Installation</h1>
 </p>
 
 <p align="justify">
@@ -30,6 +19,23 @@ tensorflow-addons==0.21.0
 ```
 git clone https://github.com/kobachii-d/VannameiVision.git
 cd VannameiVision
+```
+
+<p align="justify">
+    <h4>2. Set up virtual environment</h1>
+</p>
+
+```
+python3 -m venv venv
+source venv/bin/activate
+```
+
+<p align="justify">
+    <h4>3. Install required packages</h1>
+</p>
+
+```
+pip install -r requirements.txt
 ```
 
 <p align="justify">
