@@ -6,34 +6,74 @@
 In aquaculture, early detection of susceptible shrimp larvae is of paramount importance to maintain healthy production environments. This repository introduces VannameiVision, a novel approach that combines probabilistic deep learning with transfer and deep metric learning techniques to address the challenge of accurately identifying shrimp larvae in such vulnerable conditions.
 </p>
 
-<img src="architecture.jpg" alt="Architecture of VannameiVision Model" style="max-width:30%;">
+<img src="www/architecture.jpg" style="max-width: 100%;">
 
 ## Features
 
 ### Example data
 
 <p align="justify">
-We provide example data of robust and susceptible shrimp larvae.
+We provide example data of robust and susceptible shrimp larvae (5 each).
 </p>
 
 ```
+from skimage import io
 from vannameivision import *
 
+import matplotlib.pyplot as plt
+
 path = sorted(get_image_paths())
-path
+
+fig, (ax1, ax2) = plt.subplots(1, 2)
+ax1.imshow(io.imread(path[0]))
+ax1.set_title(path[0].split("/")[-1])
+ax1.axis("off")
+ax2.imshow(io.imread(path[5]))
+ax2.set_title(path[5].split("/")[-1])
+ax2.axis("off")
 ```
 
+<img src="www/example_data.jpg" style="max-width: 100%;">
+
+### Read and preprocessing
+
+<p align="justify">
+    After reading the image, we apply these steps:
+    <ul>
+        <li>Log-scale adjustment</li>
+        <li>Pad symmetrically to form a square</li>
+        <li>Resize the image to 224x224</li>
+        <li>Augment by random rotation between -360 and 360 degrees</li>
+    </ul>
+</p>
+
 ```
-['/usr/local/lib/python3.10/dist-packages/vannameivision/../image/robust1.jpg',
- '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/robust2.jpg',
- '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/robust3.jpg',
- '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/robust4.jpg',
- '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/robust5.jpg',
- '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/susceptible1.jpg',
- '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/susceptible2.jpg',
- '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/susceptible3.jpg',
- '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/susceptible4.jpg',
- '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/susceptible5.jpg']
+from skimage import io
+from vannameivision import *
+
+import matplotlib.pyplot as plt
+
+path = sorted(get_image_paths())
+path = path[0]
+
+original = io.imread(path)
+
+preprocessed = read_preprocess(original, augment=15)
+
+fig, (ax1, ax2, ax3, ax4, ax5) = plt.subplots(1, 5)
+ax1.imshow(original)
+ax1.set_title("Original")
+ax1.axis("off")
+ax2.imshow(preprocessed[0])
+ax2.set_title("Preprocessed (1)")
+ax2.axis("off")
+ax2.imshow(preprocessed[1])
+ax2.set_title("Preprocessed (2)")
+ax2.axis("off")
+ax2.imshow(preprocessed[2])
+ax2.set_title("Preprocessed (3)")
+ax2.axis("off")
+
 ```
 
 <p align="justify">
