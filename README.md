@@ -91,13 +91,12 @@ path = path[0]
 
 image = read_preprocess(path, augment=15)
 
-make_prediction(image, model, threshold=0.3, print_results=True)
+make_prediction(image, model, threshold=0.3)
 ```
 
 ```
 # output
-Prediction: Robust
-Confidence: 100.0%
+{"Prediction" : "Robust", "Confidence" : 100}
 ```
 
 Use *susceptible1.jpg* as an example:
@@ -112,13 +111,12 @@ path = path[5]
 
 image = read_preprocess(path, augment=15)
 
-make_prediction(image, model, threshold=0.3, print_results=True)
+make_prediction(image, model, threshold=0.3)
 ```
 
 ```
 # output
-Prediction: Susceptible
-Confidence: 100.0%
+{"Prediction" : "Susceptible", "Confidence" : 100}
 ```
 
 ## Installation
