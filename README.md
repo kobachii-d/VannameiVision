@@ -56,7 +56,7 @@ import matplotlib.pyplot as plt
 path = sorted(get_image_paths())
 path = path[0]
 
-original = io.imread(path)
+original = read_preprocess(path, augment=0)
 
 preprocessed = read_preprocess(path, augment=15)
 
@@ -65,101 +65,75 @@ ax1.imshow(original)
 ax1.set_title("Original")
 ax1.axis("off")
 ax2.imshow(preprocessed[0])
-ax2.set_title("Example 1")
+ax2.set_title("Augment 1")
 ax2.axis("off")
 ax3.imshow(preprocessed[1])
-ax3.set_title("Example 2")
+ax3.set_title("Augment 2")
 ax3.axis("off")
 ax4.imshow(preprocessed[2])
-ax4.set_title("Example 3")
+ax4.set_title("Augment 3")
 ax4.axis("off")
 ```
 
 <img src="www/original_vs_preprocessed.jpg" style="height: 200px;">
+
+### Predict robust/susceptible shrimp larvae
+
+Use *robust1.jpg* as an example:
+
+```
+from vannameivision import *
+
+model = build()
+
+path = sorted(get_image_paths())
+path = path[0]
+
+image = read_preprocess(path, augment=15)
+
+make_prediction(image, model, threshold=0.3)
+```
+
+```
+# output
+{"Prediction" : "Robust", "Confidence" : 100}
+```
+
+Use *susceptible1.jpg* as an example:
+
+```
+from vannameivision import *
+
+model = build()
+
+path = sorted(get_image_paths())
+path = path[5]
+
+image = read_preprocess(path, augment=15)
+
+make_prediction(image, model, threshold=0.3)
+```
+
+```
+# output
+{"Prediction" : "Susceptible", "Confidence" : 100}
+```
+
+## Installation
 
 <p align="justify">
 Run this code to install:
 </p>
 
 ```
-pip install git+https://github.com/kobachii-d/VannameiVision.git
+pip install git+https://github.com/kobachii-d/vannameivision.git
 ```
 
-<p align="justify">
-    <h2>Usage</h1>
-</p>
-
-<p align="justify">
-To predict whether an image contains robust or susceptible shrimp larvae:
-</p>
-
-```
-python main.py [path_to_image]
-```
-
-<p align="justify">
-This command takes in the path to the image you wish to analyze. After processing, it will display a prediction along with a confidence percentage.
-</p>
-
-<p align="justify">
-    <h2>Examples</h1>
-</p>
-
-<p align="justify">
-    <h3>Robust shrimp larvae</h1>
-</p>
-
-<p align="justify">
-Input:
-</p>
-
-<img src="image/robust/R2.jpg" alt="Robust shrimp larvae" style="width: 150px;">
-
-```
-python main.py images/image/robust/R1.jpg
-```
-
-<p align="justify">
-Output:
-</p>
-
-```
-Prediction: Robust
-Confidence: 92.3%
-```
-
-<p align="justify">
-    <h3>Susceptible shrimp larvae</h1>
-</p>
-
-<p align="justify">
-Input:
-</p>
-
-<img src="image/susceptible/S5.jpg" alt="Susceptible shrimp larvae" style="width: 150px;">
-
-```
-python main.py images/image/susceptible/S1.jpg
-```
-
-<p align="justify">
-Output:
-</p>
-
-```
-Prediction: Susceptible
-Confidence: 100.0%
-```
-
-<p align="justify">
-    <h2>Citation</h1>
-</p>
+## Citation
 
 TBA
 
-<p align="justify">
-    <h2>Acknowledgements</h1>
-</p>
+## Acknowledgements
 
 <p align="justify">
 We sincerely thank the <a href="https://www.biotec.or.th/" target="_blank">National Center for Genetic Engineering and Biotechnology (BIOTEC)</a>, <a href="https://pccp.ac.th/" target="_blank">Princess Chulabhorn Science High School Pathum Thani (PCSHS)</a>, and our families for their support and encouragement.
