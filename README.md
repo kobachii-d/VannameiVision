@@ -127,15 +127,11 @@ Run this code to install:
 pip install git+https://github.com/kobachii-d/VannameiVision.git
 ```
 
-<p align="justify">
-    <h2>Citation</h1>
-</p>
+## Citation
 
 TBA
 
-<p align="justify">
-    <h2>Acknowledgements</h1>
-</p>
+## Acknowledgements
 
 <p align="justify">
 We sincerely thank the <a href="https://www.biotec.or.th/" target="_blank">National Center for Genetic Engineering and Biotechnology (BIOTEC)</a>, <a href="https://pccp.ac.th/" target="_blank">Princess Chulabhorn Science High School Pathum Thani (PCSHS)</a>, and our families for their support and encouragement.
