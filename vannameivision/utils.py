@@ -54,7 +54,7 @@ def read_preprocess(x, augment=15):
     x=np.stack(x)
     return x
     
-def make_prediction(x, model, threshold):
+def make_prediction(x, model, threshold, print_results=True):
     x=model.predict(x, verbose=0)
     x=x[1]
     x=x.reshape(np.prod(x.shape))
@@ -62,12 +62,14 @@ def make_prediction(x, model, threshold):
     if len(set(x)) == 1:
         Prediction=["Robust", "Susceptible"][x[0]]
         Confidence=100
-        print(f"Prediction: {Prediction}\nConfidence: {np.round(Confidence, 1)}%")
+        if print_results:
+            print(f"Prediction: {Prediction}\nConfidence: {np.round(Confidence, 1)}%")
         return {"Prediction" : Prediction, "Confidence" : Confidence}
     else:
         d=np.bincount(x)
         Prediction=["Robust", "Susceptible"][np.argmax(d)]
         Confidence=d[np.argmax(d)] / np.sum(d) * 100
-        print(f"Prediction: {Prediction}\nConfidence: {str(np.round(Confidence, 1))}%")
+        if print_results:
+            print(f"Prediction: {Prediction}\nConfidence: {str(np.round(Confidence, 1))}%")
         return {"Prediction" : Prediction, "Confidence" : Confidence}
         
