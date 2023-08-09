@@ -6,6 +6,10 @@ import tensorflow_addons as tfa
 
 from skimage import io, exposure, transform
 
+def get_image_paths():
+    image_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "image")
+    return glob.glob(os.path.join(image_dir, "*.*"))
+
 def build():
     inputs=tf.keras.Input(shape=(224, 224, 3))
     x=inputs
