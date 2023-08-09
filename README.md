@@ -72,7 +72,7 @@ ax4.imshow(preprocessed[2])
 ax4.axis("off")
 ```
 
-<img src="www/original_vs_preprocessed.jpg" style="height: 200px;">
+<img src="www/original_vs_preprocessed.jpg" style="height: 210px;">
 
 <p align="justify">
 Run this code to install:
