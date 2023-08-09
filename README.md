@@ -8,9 +8,33 @@ In aquaculture, early detection of susceptible shrimp larvae is of paramount imp
 
 <img src="architecture.jpg" alt="Architecture of VannameiVision Model" style="max-width:30%;">
 
+## Features
+
+### Example data
+
 <p align="justify">
-    <h2>Installation</h1>
+We provide example data of robust and susceptible shrimp larvae.
 </p>
+
+```
+from vannameivision import *
+
+path = sorted(get_image_paths())
+path
+```
+
+```
+['/usr/local/lib/python3.10/dist-packages/vannameivision/../image/robust1.jpg',
+ '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/robust2.jpg',
+ '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/robust3.jpg',
+ '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/robust4.jpg',
+ '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/robust5.jpg',
+ '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/susceptible1.jpg',
+ '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/susceptible2.jpg',
+ '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/susceptible3.jpg',
+ '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/susceptible4.jpg',
+ '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/susceptible5.jpg']
+```
 
 <p align="justify">
 Run this code to install:
