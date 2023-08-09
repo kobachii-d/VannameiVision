@@ -60,8 +60,14 @@ def make_prediction(x, model, threshold):
     x=x.reshape(np.prod(x.shape))
     x=(x >=threshold).astype(int)
     if len(set(x)) == 1:
-        print(f"Prediction: {['Robust', 'Susceptible'][x[0]]}\nConfidence: 100.0%")
+        Prediction=["Robust", "Susceptible"][x[0]]
+        Confidence=100
+        print(f"Prediction: {Prediction}\nConfidence: {np.round(Confidence, 1)}%")
+        return {"Prediction" : Prediction, "Confidence" : Confidence}
     else:
-        d = np.bincount(x)
-        print(f"Prediction: {['Robust', 'Susceptible'][np.argmax(d)]}\nConfidence: {str(np.round(d[np.argmax(d)] / np.sum(d) * 100, 1)).rjust(5, ' ')}%")
+        d=np.bincount(x)
+        Prediction=["Robust", "Susceptible"][np.argmax(d)]
+        Confidence=d[np.argmax(d)] / np.sum(d) * 100
+        print(f"Prediction: {Prediction}\nConfidence: {str(np.round(Confidence, 1))}%")
+        return {"Prediction" : Prediction, "Confidence" : Confidence}
         
