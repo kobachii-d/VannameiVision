@@ -6,7 +6,7 @@
 In aquaculture, early detection of susceptible shrimp larvae is of paramount importance to maintain healthy production environments. This repository introduces VannameiVision, a novel approach that combines probabilistic deep learning with transfer and deep metric learning techniques to address the challenge of accurately identifying shrimp larvae in such vulnerable conditions.
 </p>
 
-<img src="www/architecture.jpg" style="height: 150px;">
+<img src="www/architecture.jpg" style="height: 300px;">
 
 ## Features
 
@@ -33,7 +33,7 @@ ax2.set_title(path[5].split("/")[-1])
 ax2.axis("off")
 ```
 
-<img src="www/example_data.jpg" style="max-width: 100%;">
+<img src="www/example_data.jpg" style="height: 150px;">
 
 ### Read and preprocessing
 
