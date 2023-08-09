@@ -13,14 +13,14 @@ In aquaculture, early detection of susceptible shrimp larvae is of paramount imp
 ### Example data
 
 <p align="justify">
-We provide example data of robust and susceptible shrimp larvae.
+We provide example data of robust and susceptible shrimp larvae (5 each).
 </p>
 
 ```
 from skimage import io
 from vannameivision import *
 
-path  = sorted(get_image_paths())
+path = sorted(get_image_paths())
 
 fig, (ax1, ax2) = plt.subplots(1, 2)
 ax1.imshow(io.imread(path[0]))
@@ -30,6 +30,20 @@ ax2.imshow(io.imread(path[5]))
 ax2.set_title(path[5].split("/")[-1])
 ax2.axis("off")
 ```
+
+### Read and preprocessing
+
+<p align="justify">
+    After reading the image, we apply these steps:
+    <ul>
+        <li>Log-scale adjustment</li>
+        <li>Pad symmetrically to form a square</li>
+        <li>Resize the image to 224x224</li>
+        <li>Replicate the image N times</li>
+        <li>For each replica, apply a random rotation between -360 and 360 degrees for augmentation</li>
+    </ul>
+</p>
+
 
 <img src="www/example_data.jpg" style="max-width: 100%;">
 
