@@ -29,7 +29,7 @@ def build():
     x=tf.keras.layers.Dense(1, activation="sigmoid", name="binary")(x)
     binary=x
     x=tf.keras.Model(inputs, [latent, binary])
-    path=os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "model", "DenseNet121-Triplet-ImageNet.h5")
+    weights_path=os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "model", "DenseNet121-Triplet-ImageNet.h5")
     x.load_weights(weights_path)
     x.trainable=False
     # done!
