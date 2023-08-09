@@ -24,7 +24,7 @@ import matplotlib.pyplot as plt
 
 path = sorted(get_image_paths())
 
-fig, (ax1, ax2) = plt.subplots(1, 2)
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(5, 5))
 ax1.imshow(io.imread(path[0]))
 ax1.set_title(path[0].split("/")[-1])
 ax1.axis("off")
@@ -60,7 +60,7 @@ original = io.imread(path)
 
 preprocessed = read_preprocess(path, augment=15)
 
-fig, (ax1, ax2, ax3, ax4) = plt.subplots(1, 4)
+fig, (ax1, ax2, ax3, ax4) = plt.subplots(1, 4, figsize=(20, 5))
 ax1.imshow(original)
 ax1.set_title("Original")
 ax1.axis("off")
