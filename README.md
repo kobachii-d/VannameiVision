@@ -6,7 +6,7 @@
 In aquaculture, early detection of susceptible shrimp larvae is of paramount importance to maintain healthy production environments. This repository introduces VannameiVision, a novel approach that combines probabilistic deep learning with transfer and deep metric learning techniques to address the challenge of accurately identifying shrimp larvae in such vulnerable conditions.
 </p>
 
-<img src="architecture.jpg" alt="Architecture of VannameiVision Model" style="max-width:30%;">
+<img src="www/architecture.jpg" style="max-width: 150px;">
 
 ## Features
 
@@ -17,24 +17,21 @@ We provide example data of robust and susceptible shrimp larvae.
 </p>
 
 ```
+from skimage import io
 from vannameivision import *
 
 path = sorted(get_image_paths())
-path
+
+fig, (ax1, ax2) = plt.subplots(1, 2)
+ax1.imshow(io.imread(path[0]))
+ax1.set_title(path[0].split("/")[-1])
+ax1.axis("off")
+ax2.imshow(io.imread(path[5]))
+ax2.set_title(path[5].split("/")[-1])
+ax2.axis("off")
 ```
 
-```
-['/usr/local/lib/python3.10/dist-packages/vannameivision/../image/robust1.jpg',
- '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/robust2.jpg',
- '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/robust3.jpg',
- '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/robust4.jpg',
- '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/robust5.jpg',
- '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/susceptible1.jpg',
- '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/susceptible2.jpg',
- '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/susceptible3.jpg',
- '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/susceptible4.jpg',
- '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/susceptible5.jpg']
-```
+<img src="www/example_data" style="max-width: 100px;">
 
 <p align="justify">
 Run this code to install:
