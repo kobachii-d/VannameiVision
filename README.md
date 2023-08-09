@@ -35,7 +35,7 @@ ax2.axis("off")
 
 <img src="www/example_data.jpg" style="height: 200px;">
 
-### Read and preprocessing
+### Read and preprocess
 
 <p align="justify">
     After reading the image, we apply these steps:
