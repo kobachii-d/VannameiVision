@@ -39,8 +39,7 @@ ax2.axis("off")
         <li>Log-scale adjustment</li>
         <li>Pad symmetrically to form a square</li>
         <li>Resize the image to 224x224</li>
-        <li>Replicate the image N times</li>
-        <li>For each replica, apply a random rotation between -360 and 360 degrees for augmentation</li>
+        <li>Augment by random rotation between -360 and 360 degrees</li>
     </ul>
 </p>
 
