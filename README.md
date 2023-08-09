@@ -79,9 +79,7 @@ ax4.axis("off")
 
 ### Predict robust/susceptible shrimp larvae
 
-<p align="justify">
-Robust shrimp larvae:
-</p>
+Use `robust1.jpg` as an example:
 
 ```
 from vannameivision import *
@@ -99,9 +97,7 @@ Prediction: Robust
 Confidence: 100.0%
 `
 
-<p align="justify">
-Susceptible shrimp larvae:
-</p>
+Use `susceptible1.jpg` as an example:
 
 ```
 from vannameivision import *
