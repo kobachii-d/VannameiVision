@@ -1,1 +1,1 @@
-from .utils import build, read_preprocess, make_prediction
+from .utils import get_image_paths, build, read_preprocess, make_prediction
