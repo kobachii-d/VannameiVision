@@ -58,23 +58,21 @@ path = path[0]
 
 original = io.imread(path)
 
-preprocessed = read_preprocess(original, augment=15)
+preprocessed = read_preprocess(path, augment=15)
 
-fig, (ax1, ax2, ax3, ax4, ax5) = plt.subplots(1, 5)
+fig, (ax1, ax2, ax3, ax4) = plt.subplots(1, 4)
+fig.suptitle("Original vs. Preprocessed")
 ax1.imshow(original)
-ax1.set_title("Original")
 ax1.axis("off")
 ax2.imshow(preprocessed[0])
-ax2.set_title("Preprocessed (1)")
 ax2.axis("off")
-ax2.imshow(preprocessed[1])
-ax2.set_title("Preprocessed (2)")
-ax2.axis("off")
-ax2.imshow(preprocessed[2])
-ax2.set_title("Preprocessed (3)")
-ax2.axis("off")
-
+ax3.imshow(preprocessed[1])
+ax3.axis("off")
+ax4.imshow(preprocessed[2])
+ax4.axis("off")
 ```
+
+<img src="www/original_vs_preprocessed.jpg" style="max-width: 100%;">
 
 <p align="justify">
 Run this code to install:
