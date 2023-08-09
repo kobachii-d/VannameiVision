@@ -65,13 +65,13 @@ ax1.imshow(original)
 ax1.set_title("Original")
 ax1.axis("off")
 ax2.imshow(preprocessed[0])
-ax2.set_title("Example 1")
+ax2.set_title("Augment 1")
 ax2.axis("off")
 ax3.imshow(preprocessed[1])
-ax3.set_title("Example 2")
+ax3.set_title("Augment 2")
 ax3.axis("off")
 ax4.imshow(preprocessed[2])
-ax4.set_title("Example 3")
+ax4.set_title("Augment 3")
 ax4.axis("off")
 ```
 
@@ -88,6 +88,8 @@ model = build()
 
 path = sorted(get_image_paths())
 path = path[0]
+
+image = read_preprocess(path, augment=15)
 
 make_prediction(image, model, threshold=0.3, print_results=True)
 ```
@@ -107,6 +109,8 @@ model = build()
 
 path = sorted(get_image_paths())
 path = path[5]
+
+image = read_preprocess(path, augment=15)
 
 make_prediction(image, model, threshold=0.3, print_results=True)
 ```
