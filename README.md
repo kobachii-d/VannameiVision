@@ -20,6 +20,8 @@ We provide example data of robust and susceptible shrimp larvae (5 each).
 from skimage import io
 from vannameivision import *
 
+import matplotlib.pyplot as plt
+
 path = sorted(get_image_paths())
 
 fig, (ax1, ax2) = plt.subplots(1, 2)
@@ -30,6 +32,8 @@ ax2.imshow(io.imread(path[5]))
 ax2.set_title(path[5].split("/")[-1])
 ax2.axis("off")
 ```
+
+<img src="www/example_data.jpg" style="max-width: 100%;">
 
 ### Read and preprocessing
 
@@ -43,8 +47,15 @@ ax2.axis("off")
     </ul>
 </p>
 
+```
+from vannameivision import *
 
-<img src="www/example_data.jpg" style="max-width: 100%;">
+import matplotlib.pyplot as plt
+
+path = sorted(get_image_paths())
+path = path[0]
+
+```
 
 <p align="justify">
 Run this code to install:
