@@ -1,3 +1,4 @@
+import os
 import numpy as np
 
 import tensorflow as tf
@@ -28,7 +29,8 @@ def build():
     x=tf.keras.layers.Dense(1, activation="sigmoid", name="binary")(x)
     binary=x
     x=tf.keras.Model(inputs, [latent, binary])
-    x.load_weights("DenseNet121-Triplet-ImageNet.h5")
+    path=os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "model", "DenseNet121-Triplet-ImageNet.h5")
+    x.load_weights(weights_path)
     x.trainable=False
     # done!
     return x

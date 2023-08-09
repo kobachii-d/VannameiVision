@@ -10,7 +10,7 @@ setup(
         "tensorflow-addons"
     ],
     package_data={
-        'vannameivision': ['../DenseNet121-Triplet-ImageNet.h5', '../image/*']
+        'vannameivision': ['../model/DenseNet121-Triplet-ImageNet.h5', '../image/*']
     },
     url="https://github.com/kobachii-d/VannameiVision",
     author="Kobchai Duangrattanalert",
