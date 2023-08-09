@@ -79,7 +79,7 @@ ax4.axis("off")
 
 ### Predict robust/susceptible shrimp larvae
 
-Use `robust1.jpg` as an example:
+Use *robust1.jpg* as an example:
 
 ```
 from vannameivision import *
@@ -92,12 +92,13 @@ path = path[0]
 make_prediction(image, model, threshold=0.3, print_results=True)
 ```
 
-`
+```
+# output
 Prediction: Robust
 Confidence: 100.0%
-`
+```
 
-Use `susceptible1.jpg` as an example:
+Use *susceptible1.jpg* as an example:
 
 ```
 from vannameivision import *
@@ -111,6 +112,7 @@ make_prediction(image, model, threshold=0.3, print_results=True)
 ```
 
 ```
+# output
 Prediction: Susceptible
 Confidence: 100.0%
 ```
