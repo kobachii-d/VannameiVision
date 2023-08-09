@@ -48,12 +48,31 @@ ax2.axis("off")
 </p>
 
 ```
+from skimage import io
 from vannameivision import *
 
 import matplotlib.pyplot as plt
 
 path = sorted(get_image_paths())
 path = path[0]
+
+original = io.imread(path)
+
+preprocessed = read_preprocess(original, augment=15)
+
+fig, (ax1, ax2, ax3, ax4, ax5) = plt.subplots(1, 5)
+ax1.imshow(original)
+ax1.set_title("Original")
+ax1.axis("off")
+ax2.imshow(preprocessed[0])
+ax2.set_title("Preprocessed (1)")
+ax2.axis("off")
+ax2.imshow(preprocessed[1])
+ax2.set_title("Preprocessed (2)")
+ax2.axis("off")
+ax2.imshow(preprocessed[2])
+ax2.set_title("Preprocessed (3)")
+ax2.axis("off")
 
 ```
 
