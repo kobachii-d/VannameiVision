@@ -77,6 +77,50 @@ ax4.axis("off")
 
 <img src="www/original_vs_preprocessed.jpg" style="height: 200px;">
 
+### Predict robust/susceptible shrimp larvae
+
+<p align="justify">
+Robust shrimp larvae:
+</p>
+
+```
+from vannameivision import *
+
+model = build()
+
+path = sorted(get_image_paths())
+path = path[0]
+
+make_prediction(image, model, threshold=0.3, print_results=True)
+```
+
+```
+Prediction: Robust
+Confidence: 100.0%
+```
+
+<p align="justify">
+Susceptible shrimp larvae:
+</p>
+
+```
+from vannameivision import *
+
+model = build()
+
+path = sorted(get_image_paths())
+path = path[5]
+
+make_prediction(image, model, threshold=0.3, print_results=True)
+```
+
+```
+Prediction: Susceptible
+Confidence: 100.0%
+```
+
+## Installation
+
 <p align="justify">
 Run this code to install:
 </p>
