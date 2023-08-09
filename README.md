@@ -3,39 +3,45 @@
 </p>
 
 <p align="justify">
-In aquaculture, early detection of susceptible shrimp larvae is of paramount importance to maintain healthy production environments. This GitHub repository introduces VannameiVision, a novel approach that combines probabilistic deep learning with transfer and deep metric learning techniques to address the challenge of accurately identifying shrimp larvae in such vulnerable conditions.
+In aquaculture, early detection of susceptible shrimp larvae is of paramount importance to maintain healthy production environments. This repository introduces VannameiVision, a novel approach that combines probabilistic deep learning with transfer and deep metric learning techniques to address the challenge of accurately identifying shrimp larvae in such vulnerable conditions.
 </p>
 
 <img src="architecture.jpg" alt="Architecture of VannameiVision Model" style="max-width:30%;">
 
-<p align="justify">
-    <h2>Installation</h1>
-</p>
+## Features
+
+### Example data
 
 <p align="justify">
-    <h4>1. Clone the repository:</h1>
-</p>
-
-```
-git clone https://github.com/kobachii-d/VannameiVision.git
-cd VannameiVision
-```
-
-<p align="justify">
-    <h4>2. Set up a virtual environment (optional but recommended):</h1>
+We provide example data of robust and susceptible shrimp larvae.
 </p>
 
 ```
-python3 -m venv venv
-source venv/bin/activate
+from vannameivision import *
+
+path = sorted(get_image_paths())
+path
+```
+
+```
+['/usr/local/lib/python3.10/dist-packages/vannameivision/../image/robust1.jpg',
+ '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/robust2.jpg',
+ '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/robust3.jpg',
+ '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/robust4.jpg',
+ '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/robust5.jpg',
+ '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/susceptible1.jpg',
+ '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/susceptible2.jpg',
+ '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/susceptible3.jpg',
+ '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/susceptible4.jpg',
+ '/usr/local/lib/python3.10/dist-packages/vannameivision/../image/susceptible5.jpg']
 ```
 
 <p align="justify">
-    <h4>3. Install the required packages:</h1>
+Run this code to install:
 </p>
 
 ```
-pip install -r requirements.txt
+pip install git+https://github.com/kobachii-d/VannameiVision.git
 ```
 
 <p align="justify">
