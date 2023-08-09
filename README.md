@@ -6,7 +6,7 @@
 In aquaculture, early detection of susceptible shrimp larvae is of paramount importance to maintain healthy production environments. This repository introduces VannameiVision, a novel approach that combines probabilistic deep learning with transfer and deep metric learning techniques to address the challenge of accurately identifying shrimp larvae in such vulnerable conditions.
 </p>
 
-<img src="www/architecture.jpg" style="max-width: 100%;">
+<img src="www/architecture.jpg" style="height: 500px;">
 
 ## Features
 
@@ -33,7 +33,7 @@ ax2.set_title(path[5].split("/")[-1])
 ax2.axis("off")
 ```
 
-<img src="www/example_data.jpg" style="max-width: 100%;">
+<img src="www/example_data.jpg" style="height: 200px;">
 
 ### Read and preprocessing
 
@@ -58,23 +58,21 @@ path = path[0]
 
 original = io.imread(path)
 
-preprocessed = read_preprocess(original, augment=15)
+preprocessed = read_preprocess(path, augment=15)
 
-fig, (ax1, ax2, ax3, ax4, ax5) = plt.subplots(1, 5)
+fig, (ax1, ax2, ax3, ax4) = plt.subplots(1, 4)
+fig.suptitle("Original vs. Preprocessed")
 ax1.imshow(original)
-ax1.set_title("Original")
 ax1.axis("off")
 ax2.imshow(preprocessed[0])
-ax2.set_title("Preprocessed (1)")
 ax2.axis("off")
-ax2.imshow(preprocessed[1])
-ax2.set_title("Preprocessed (2)")
-ax2.axis("off")
-ax2.imshow(preprocessed[2])
-ax2.set_title("Preprocessed (3)")
-ax2.axis("off")
-
+ax3.imshow(preprocessed[1])
+ax3.axis("off")
+ax4.imshow(preprocessed[2])
+ax4.axis("off")
 ```
+
+<img src="www/original_vs_preprocessed.jpg" style="height: 210px;">
 
 <p align="justify">
 Run this code to install:
