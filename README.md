@@ -124,7 +124,7 @@ Run this code to install:
 </p>
 
 ```
-pip install git+https://github.com/kobachii-d/VannameiVision.git
+pip install git+https://github.com/kobachii-d/vannameivision.git
 ```
 
 ## Citation
