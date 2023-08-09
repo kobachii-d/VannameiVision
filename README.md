@@ -56,7 +56,7 @@ import matplotlib.pyplot as plt
 path = sorted(get_image_paths())
 path = path[0]
 
-original = io.imread(path)
+original = read_preprocess(path, augment=0)
 
 preprocessed = read_preprocess(path, augment=15)
 
