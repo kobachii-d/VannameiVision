@@ -94,10 +94,10 @@ path = path[0]
 make_prediction(image, model, threshold=0.3, print_results=True)
 ```
 
-```
+`
 Prediction: Robust
 Confidence: 100.0%
-```
+`
 
 <p align="justify">
 Susceptible shrimp larvae:
