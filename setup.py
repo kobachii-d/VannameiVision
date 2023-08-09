@@ -5,7 +5,6 @@ setup(
     version="0.1",
     packages=find_packages(),
     install_requires=[
-        "numpy==1.22.4",
         "scikit-image==0.19.3",
         "tensorflow==2.12.0",
         "tensorflow-addons==0.21.0"
