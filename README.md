@@ -31,7 +31,7 @@ ax2.set_title(path[5].split("/")[-1])
 ax2.axis("off")
 ```
 
-<img src="www/example_data.jpg" style="max-width: 50px;">
+<img src="www/example_data.jpg" style="max-width: 15px;">
 
 <p align="justify">
 Run this code to install:
